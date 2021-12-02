@@ -1,0 +1,75 @@
+.view {
+    width: 50%;
+    align-self: center;
+    margin: 0 auto;
+    background-color: lightslategrey;
+    box-shadow: 0 0 11px rgba(24, 24, 24, 0.5); 
+}
+.view > nav {
+    border-bottom: black;
+    border-width: thin;
+    border-style: none none double none;
+    margin-bottom: 0.75rem;
+}
+.view > nav > button {
+    width: 50%;
+    height: 2rem;
+    margin-bottom: 1%;
+    border: none;
+    outline: none;
+}
+.view > nav > button.clicked, .view > nav > button:hover {
+    background-color: lightslategrey;
+    filter: brightness(1.1);
+    border: thin solid hsl(210, 14%, 40%);
+}
+.title {
+    font-weight: normal;
+    font-family: cursive;
+}
+.input {
+    width: 100%;
+    padding: 5px 8px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+.label {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+.container {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: block;
+    color: peru;
+    text-align: center;
+}
+.invisible {
+    visibility: hidden;
+}
+form_input:focus {
+	outline: 3px solid royalblue;
+}
+.btn {
+	position: relative;
+	top: -5px;
+	flex: 1 1 100px;
+	margin: 10px;
+	cursor: pointer;
+	border: none;
+	padding: 20px;
+	border-radius: 10px;
+	background-color: royalblue;
+	color: #FFFFFF;
+	box-shadow: 0 12px 7px -5px rgba(0,0,0,0.35);
+	transition: box-shadow .2s, top .2s, background-color .2s, flex-basis .2s;
+}
+.btn:hover,
+.btn:focus {
+	box-shadow: 0 0 0 0 rgba(0,0,0,0.35);
+	top: 0;
+}
+.btn:focus {
+	background-color: #4A65CE;
+	outline: 0;
+}

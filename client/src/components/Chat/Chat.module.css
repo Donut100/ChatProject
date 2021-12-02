@@ -1,0 +1,17 @@
+.chat {
+    flex: 75;
+    width: 100%;
+}
+
+.chat > header {
+    height: 5%;
+}
+
+.chat > main {
+    height: 90%;
+}
+
+.chat > input {
+    width: 90%;
+    height: 5%;
+}

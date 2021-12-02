@@ -1,0 +1,40 @@
+li {
+    background-color: white;
+    padding: 50px, 0px;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
+    transition: 0.05s ease-out;
+    margin-bottom: 0.2rem;
+
+    --left-offset: 0.5rem;
+}
+li > * {
+    margin-left: var(--left-offset);
+}
+.header {
+    width: fit-content;
+}
+div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+.body {
+    display: inline-block;
+    text-align: start;
+    color: gray;
+    font-size: small;
+}
+.timestamp {
+    align-self: flex-end;
+    font-size: x-small;
+    margin-right: 0.8rem;
+    color: hsl(0, 0%, 73%);
+}
+li:hover {
+    filter: brightness(0.95);
+}
+
+.selected {
+    filter: brightness(0.95);
+}
